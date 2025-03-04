@@ -1,6 +1,6 @@
 .todo-list-container {
   max-width: 500px;
-  margin: 30px auto;
+  margin: -15px auto;
   padding: 10px;
   background-color: #f4f4f4;
   border-radius: 8px;
@@ -16,8 +16,8 @@ ul {
   justify-content: space-between;
   align-items: center;
   background-color: #fff;
-  margin: 5px 0;
-  padding: 8px;
+  margin: 3px 0;
+  padding: 5px;
   border-radius: 8px;
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
   font-size: 16px;
@@ -35,7 +35,7 @@ ul {
   background-color: #ff4d4d;
   color: white;
   border: none;
-  padding: 8px 12px;
+  padding: 5px 12px;
   font-size: 14px;
   cursor: pointer;
   border-radius: 4px;

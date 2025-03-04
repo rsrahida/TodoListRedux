@@ -1,6 +1,8 @@
-import { createStore } from "redux";
-import todoReducer from "./todoReducer";
+// src/store/store.js
+import { createStore } from 'redux';
+import rootReducer from './rootReducer'; // rootReducer-i düzgün import edirik
 
-const store = createStore(todoReducer);
+const store = createStore(rootReducer);
 
 export default store;
+
