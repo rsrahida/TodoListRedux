@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./TodoInput.css";
 import { useDispatch } from "react-redux";
-import { addItem } from "../../store/actions"; // addItem funksiyasını import edirik
+import { addItem } from "../../store/actions";
 
 const TodoInput = () => {
   const [newTodo, setNewTodo] = useState("");
@@ -9,8 +9,8 @@ const TodoInput = () => {
 
   const handleAddTodo = () => {
     if (newTodo.trim()) {
-      dispatch(addItem(newTodo)); // Yeni itemi Redux store-a göndəririk
-      setNewTodo(""); // Inputu təmizləyirik
+      dispatch(addItem(newTodo));
+      setNewTodo("");
     }
   };
 
@@ -20,7 +20,7 @@ const TodoInput = () => {
         type="text"
         placeholder="Add to List..."
         value={newTodo}
-        onChange={(e) => setNewTodo(e.target.value)} // Dəyəri update edirik
+        onChange={(e) => setNewTodo(e.target.value)}
       />
       <button onClick={handleAddTodo}>Add list</button>
     </div>

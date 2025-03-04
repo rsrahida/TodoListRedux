@@ -21,7 +21,7 @@
 }
 .todo-input input:focus {
   border-color: #f63dc5;
-  box-shadow: 0 5px 8px rgba(249, 88, 235, 0.5);
+  box-shadow: -5px 5px 5px  rgba(249, 88, 235, 0.5);
 }
 .todo-input button {
   width: 25%;
