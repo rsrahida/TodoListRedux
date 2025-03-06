@@ -12,22 +12,15 @@ export const removeItem = (id) => {
   };
 };
 
-// actions.js
-
-export const LOGIN = "LOGIN";
-export const LOGOUT = "LOGOUT";
-
-// LOGIN action-u
 export const loginUser = (userData) => {
   return {
-    type: LOGIN,
+    type: "LOGIN",
     payload: userData,
   };
 };
 
-// LOGOUT action-u
 export const logoutUser = () => {
   return {
-    type: LOGOUT,
+    type: "LOGOUT",
   };
 };

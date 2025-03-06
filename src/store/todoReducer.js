@@ -6,20 +6,17 @@ const todoReducer = (state = initialState, action) => {
   switch (action.type) {
     case "ADD_ITEM":
       const updatedAddTodos = [...state.todos, action.payload];
-      localStorage.setItem("todos", JSON.stringify(updatedAddTodos)); 
+      localStorage.setItem("todos", JSON.stringify(updatedAddTodos));
       return { ...state, todos: updatedAddTodos };
-
     case "REMOVE_ITEM":
       const updatedRemoveTodos = state.todos.filter(
-        (_, index) => index !== action.payload
+        (_, id) => id !== action.payload
       );
-      localStorage.setItem("todos", JSON.stringify(updatedRemoveTodos)); 
+      localStorage.setItem("todos", JSON.stringify(updatedRemoveTodos));
       return { ...state, todos: updatedRemoveTodos };
-
     default:
       return state;
   }
 };
 
 export default todoReducer;
-
